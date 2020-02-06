@@ -5,6 +5,12 @@ class Category(models.Model):
   name = models.CharField(max_length =30)
   description = models.CharField(max_length =200)
 
+  @classmethod
+  def all_categs(cls):
+    categories = cls.objects.all()
+
+    return categories
+
   def __str__(self):
         return self.name
 

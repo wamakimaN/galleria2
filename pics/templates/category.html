@@ -1,0 +1,8 @@
+{%extends 'base.html'%}
+{%block content%}
+{{block.super}}
+<h1>{{category.name}}</h1>
+{%for pics_item in pics%}
+<img src="{{pics_item.image.url}}" alt="Image">
+{%endfor%}
+{%endblock%}
