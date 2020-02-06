@@ -2,4 +2,7 @@
 {%block content%}
 {{block.super}}
 <h1> This works also.</h1>
-{%endblock%} 
+{%for pics_item in pics%}
+<img src="{{pics_item.image.url}}" alt="Image">
+{%endfor%}
+{%endblock%}
