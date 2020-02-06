@@ -32,7 +32,7 @@ class PicLocation(ListView):
 
   def get_queryset(self):
     self.location = get_object_or_404(Location,pk=self.kwargs['pk'])
-    return Location.objects.filter(location=self.location)
+    return Picture.objects.filter(location=self.location)
 
   def get_context_data(self,**kwargs):
     context = super(PicLocation, self).get_context_data(**kwargs)
