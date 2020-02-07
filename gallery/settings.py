@@ -28,8 +28,6 @@ from decouple import config,Csv
 MODE=config("MODE", default='dev')
 SECRET_KEY = config('SECRET_KEY')
 
-SECRET_KEY = 
-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)
 
