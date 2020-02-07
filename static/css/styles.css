@@ -1,24 +1,59 @@
 h1{
-  color: indigo;
-} 
+  color: cyan;
+}
+.card{
+  margin-top: 15px;
+}
+nav{
+  text-decoration: none;
+  
+  background-color: #C0B3A0;
+}
 
-header[role="banner"] #logo-main {
-  display: block;
-  margin: 20px auto;
+a{
+color: #22252C;
+text-decoration: none;
+font-family: 'Bungee Inline', cursive;
+
 }
-#navbar-primary.navbar-default {
-  background: transparent;
-  border: none;
+
+.logo{
+  font-family: 'Bungee Shade', cursive;
+  font-size: x-large;
+  font-weight: bolder;
 }
-#navbar-primary.navbar-default .navbar-nav {
-  width: 100%;
+
+a:hover{
+  color: #22252C;
+  text-decoration: none;
+}
+.btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  border-radius: 35px;
+  font-size: 24px;
+  line-height: 1.33;
+}
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  padding: 6px 0px;
+  border-radius: 15px;
   text-align: center;
+  font-size: 12px;
+  line-height: 1.42857;
 }
-#navbar-primary.navbar-default .navbar-nav > li {
-  display: inline-block;
-  float: none;
+
+button{
+   background-color: #22252C;
+  
 }
-#navbar-primary.navbar-default .navbar-nav > li > a {
-  padding-left: 30px;
-  padding-right: 30px;
+
+button i{
+   color: #E14658;
+}
+
+.navbar-toggler{
+  background-color: #22252C;
 }

@@ -1,0 +1,72 @@
+{%extends 'base.html'%}
+{%block content%}
+<div class="container">
+  <div class="row">
+    <div class="col-md-1"> </div>
+    {%for pics in picture_list%}
+
+    <div class="col-md-5">
+
+      <!-- Card Regular -->
+
+      <div class="card ">
+
+        <!-- Card image -->
+        <div class="view view-cascade">
+          <img class="img img-fluid" src="{{pics.image.url}}" data-toggle="modal"
+          data-target="#modal{{pics.id}}">
+         
+        </div>
+
+        <!-- Card content -->
+        <div class="card-body card-body-cascade text-center">
+
+          <h6 class="font-weight-bold indigo-text py-2" data-toggle="modal" data-target="#modal{{pics.id}}">{{pics_item.pic_name}}</h6>
+
+        </div>
+
+      </div>
+      <!-- Card Regular -->
+
+    </div>
+    <!-- Button trigger modal-->
+
+
+<!--Modal: modalYT-->
+<div class="modal fade" id="modal{{pics.id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-md" role="document">
+
+    <!--Content-->
+    <div class="modal-content">
+
+      <!--Body-->
+      <div class="modal-body mb-0 p-0">
+
+          <img class="img img-fluid" src="{{pics.image.url}}">
+    
+
+      </div>
+
+      <!--Footer-->
+      <div class="modal-footer justify-content-center flex-column flex-md-row">
+        <span class="mr-4">{{pics.pic_desc}}</span>
+       
+        <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4"
+          data-dismiss="modal">Close</button>
+
+
+      </div>
+
+    </div>
+    <!--/.Content-->
+
+  </div>
+</div>
+<!--Modal: modalYT-->
+    {%endfor%}
+    <div class="col-md-1"></div>
+  </div>
+</div>
+
+{%endblock%}
